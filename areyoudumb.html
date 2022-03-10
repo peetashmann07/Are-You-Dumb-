@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 align=center id="head">Are you dumb</h1>
+<button style="margin-left:100px;width:100px;height:50px;" onclick="knewit()" id="yes">Yes</button>
+<button style="position:absolute;  margin-left:1100px;width:100px;height:50px;" onmouseover="move(this)" id="no">No</button>
+</body>
+<script>
+function move(btn){
+    btn.style.top = Math.floor((Math.random() * 230) + 1) + "px";
+btn.style.left = Math.floor((Math.random() * 200) + 1) + "px";
+}
+
+function knewit(){
+    x = document.getElementById('head');
+    x.innerText = "I knew it :)";
+    document.getElementById('yes').style.visibility = "hidden";
+    document.getElementById('no').style.visibility = "hidden";
+
+}
+
+</script>
+</html>
